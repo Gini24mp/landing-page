@@ -139,6 +139,10 @@ nav{
     width: 30%;
     padding: 10px;
     border-radius: 5px;
+    background-color: white;
+    border-style: solid;
+    border-width: 0px 0px 0px 5px; /* 0px top, 0px right, 0px bottom and 5px left */
+    border-color: var(--red);
 }
 
 .atl-card:hover{
@@ -147,7 +151,7 @@ nav{
 
 .atl-img{
     width: 100%;
-    height: 40%;
+    height: 55%;
     border-radius: 5px;
 }
 
@@ -160,4 +164,136 @@ nav{
 
 .atl-content{
     padding: 5px;
+}
+
+.button-89 {
+    --b: 3px;   
+    --s: .45em; 
+    --color: #373B44;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+        var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+.button-89:hover,
+.button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+  
+.button-89:active {
+    background: var(--color);
+    color: #fff;
+}
+
+.goals-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.goal-card{
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+.goals-section{
+    background-color: var(--bg-red);;
+}
+
+.goal-heading{
+    font-size: 2em;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.button-74 {
+  background-color: var(--bg-red);
+  border: 2px solid var(--red);
+  border-radius: 30px;
+  box-shadow: var(--red) 4px 4px 0 0;
+  color: var(--red);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: var(--red) 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.form-container{
+    padding: 10px;
+    text-align: center;
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+input{
+    padding: 5px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    
+    background-color: var(--bg-red);
+}
+
+.footer-img{
+    text-align: center;
+}
+
+.footer-brand{
+    text-align: center;
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    background-color: var(--bg-red);
+    padding: 10px;
 }
