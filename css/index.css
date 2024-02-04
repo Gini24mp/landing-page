@@ -1,0 +1,163 @@
+:root{
+    --red: #EE141F;
+    --grey:rgb(241 245 249);
+    --bg-red:rgb(252 165 165);
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar styling  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    background-color: var(--grey);
+
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.brand-name{
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--red);
+}
+
+.nav-logo{
+    padding: 5px;
+}
+
+.brand-container{
+    display: flex;
+    align-items: center;
+}
+
+.link-list{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-link{
+    float: left;
+    padding: 5px;
+}
+
+.nav-link:hover{
+    color: var(--red);
+    font-weight: bolder;
+}
+
+.active-link{
+    color: var(--red);
+    font-weight: bolder;
+}
+
+/* section styling */
+.red-section{
+    background-color: var(--bg-red);
+    padding: 7px;
+    text-align: center;
+    display: flex;
+}
+
+.button-34 {
+    background: var(--red);
+    border-radius: 999px;
+    box-shadow: var(--red) 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 8px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.button-34:hover {
+    background: white;
+    box-shadow: var(--red) 0 10px 20px -10px;
+    color: var(--red);
+}
+
+.abt-text{
+    width: 30%;
+    padding: 10px;
+}
+
+.abt-image{
+    width: 70%;
+}
+
+.abt-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.abt-heading{
+    font-size: 3em;
+    color: var(--red);
+    font-weight: bolder;
+    font-family:"Protest Riot",san-serif;
+}
+
+.center-heading{
+    text-align: center;
+}
+
+.atl-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.atl-card{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.atl-card:hover{
+    background-color: var(--bg-red);
+}
+
+.atl-img{
+    width: 100%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+.atl-title{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: var(--red);
+    border: var(--red) 1px;
+}
+
+.atl-content{
+    padding: 5px;
+}
